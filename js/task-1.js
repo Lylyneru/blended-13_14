@@ -3,13 +3,13 @@
 //  Функція повинна повертати індекс першого входження підрядка в рядок.
 //  Якщо підрядок не знайдено, функція повинна повертати - 1.
 // Приклади використання:
-console.log(findFirstOccurrence("Hello, world!", "world")); // 7
-console.log(findFirstOccurrence("Hello, world!", "JavaScript")); // -1
-console.log(findFirstOccurrence("Hello, world!", "Hello")); // 0
+// console.log(findFirstOccurrence("Hello, world!", "world")); // 7
+// console.log(findFirstOccurrence("Hello, world!", "JavaScript")); // -1
+// console.log(findFirstOccurrence("Hello, world!", "Hello")); // 0
 
-function findFirstOccurrence(str, substr) {
-  return str.indexOf(substr);
-}
+// function findFirstOccurrence(str, substr) {
+//   return str.indexOf(substr);
+// }
 
 2;
 // Написати функцію getSubstring, яка приймає три аргументи: рядок str,
@@ -17,10 +17,14 @@ function findFirstOccurrence(str, substr) {
 // Функція повинна повертати підрядок, що починається з індексу start
 // і закінчується індексом end(не включаючи його).
 
-// Приклади використання:
-console.log(getSubstring("Hello, world!", 7, 12)); // "world"
-console.log(getSubstring("JavaScript", 4, 10)); // "Script"
-console.log(getSubstring("Slice method", 0, 5)); // "Slice"
+// function getSubstring(str, start, end) {
+//   return str.slice(start, end);
+// }
+
+// // Приклади використання:
+// console.log(getSubstring("Hello, world!", 7, 12)); // "world"
+// console.log(getSubstring("JavaScript", 4, 10)); // "Script"
+// console.log(getSubstring("Slice method", 0, 5)); // "Slice"
 
 3;
 // Написати функцію extractAfterSubstring,
