@@ -32,10 +32,24 @@
 // Функція повинна повертати частину рядка, що йде після першого входження підрядка.
 // Якщо підрядок не знайдено, функція повинна повертати порожній рядок.
 
-// Приклади використання:
-console.log(extractAfterSubstring("Hello, world!", "world")); // "!"
-console.log(extractAfterSubstring("Hello, world!", "JavaScript")); // ""
-console.log(extractAfterSubstring("Hello, world!", "Hello")); // ", world!"
+// function extractAfterSubstring(str, substr) {
+//     const idx = str.indexOf(substr);
+
+//     if (idx === -1) {
+//         return "";
+//     } else {
+//         return str.slice(idx + substr.length);
+//     }
+
+
+
+// }
+
+
+// // Приклади використання:
+// console.log(extractAfterSubstring("Hello, world!", "world")); // "!"
+// console.log(extractAfterSubstring("Hello, world!", "JavaScript")); // ""
+// console.log(extractAfterSubstring("Hello, world!", "Hello")); // ", world!"
 
 4;
 // Написати функцію removeSubstring, яка приймає два аргументи:
