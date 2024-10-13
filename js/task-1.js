@@ -80,17 +80,26 @@ function findFirstOccurrence(str, substr) {
 // Приклади використання:
 // console.log(extractBetween("Hello, [world]!", "[", "]")); // "world"
 // console.log(extractBetween("Hello, [world]!", "{", "}")); // ""
-// console.log(extractBetween("Hello, {world}!", "{", "}")) / 6;
+// console.log(extractBetween("Hello, {world}!", "{", "}")) / 
+6;
 // Написати функцію removeVowelsFromWords,
 //   яка приймає рядок str і повертає новий рядок,
 //     у якому з кожного слова видалені всі голосні букви.
 
-// const vowels = "aeiouAEIOU";
-
+const vowels = "aeiouAEIOU";
+function removeVowelsFromWords(str) {
+  let newStr = "";
+  for( let i = 0; i < str.length; i++) {
+    if(!vowels.includes(str[i])){
+      newStr += str[i];
+    }
+  }
+  return newStr
+}
 // // Приклади використання:
-// console.log(removeVowelsFromWords("Hello, world!")); // "Hll, wrld!"
-// console.log(removeVowelsFromWords("JavaScript is awesome!")); // "JvScrpt s wsm!"
-// console.log(removeVowelsFromWords("Remove vowels from words")); // "Rmv vwls frm wrds"
+console.log(removeVowelsFromWords("Hello, world!")); // "Hll, wrld!"
+console.log(removeVowelsFromWords("JavaScript is awesome!")); // "JvScrpt s wsm!"
+console.log(removeVowelsFromWords("Remove vowels from words")); // "Rmv vwls frm wrds"
 
 7;
 //  Напиши цикл, який пропонує ввести число більше 100 через prompt.
