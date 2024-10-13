@@ -3,13 +3,13 @@
 //  Функція повинна повертати індекс першого входження підрядка в рядок.
 //  Якщо підрядок не знайдено, функція повинна повертати - 1.
 // Приклади використання:
-// console.log(findFirstOccurrence("Hello, world!", "world")); // 7
-// console.log(findFirstOccurrence("Hello, world!", "JavaScript")); // -1
-// console.log(findFirstOccurrence("Hello, world!", "Hello")); // 0
+console.log(findFirstOccurrence("Hello, world!", "world")); // 7
+console.log(findFirstOccurrence("Hello, world!", "JavaScript")); // -1
+console.log(findFirstOccurrence("Hello, world!", "Hello")); // 0
 
-// function findFirstOccurrence(str, substr) {
-//   return str.indexOf(substr);
-// }
+function findFirstOccurrence(str, substr) {
+  return str.indexOf(substr);
+}
 
 2;
 // Написати функцію getSubstring, яка приймає три аргументи: рядок str,
@@ -78,16 +78,25 @@
 //   функція повинна повертати порожній рядок.
 
 // Приклади використання:
-console.log(extractBetween("Hello, [world]!", "[", "]")); // "world"
-console.log(extractBetween("Hello, [world]!", "{", "}")); // ""
-console.log(extractBetween("Hello, {world}!", "{", "}")) / 6;
+// console.log(extractBetween("Hello, [world]!", "[", "]")); // "world"
+// console.log(extractBetween("Hello, [world]!", "{", "}")); // ""
+// console.log(extractBetween("Hello, {world}!", "{", "}")) / 
+6;
 // Написати функцію removeVowelsFromWords,
 //   яка приймає рядок str і повертає новий рядок,
 //     у якому з кожного слова видалені всі голосні букви.
 
 const vowels = "aeiouAEIOU";
-
-// Приклади використання:
+function removeVowelsFromWords(str) {
+  let newStr = "";
+  for( let i = 0; i < str.length; i++) {
+    if(!vowels.includes(str[i])){
+      newStr += str[i];
+    }
+  }
+  return newStr
+}
+// // Приклади використання:
 console.log(removeVowelsFromWords("Hello, world!")); // "Hll, wrld!"
 console.log(removeVowelsFromWords("JavaScript is awesome!")); // "JvScrpt s wsm!"
 console.log(removeVowelsFromWords("Remove vowels from words")); // "Rmv vwls frm wrds"
@@ -102,6 +111,15 @@ console.log(removeVowelsFromWords("Remove vowels from words")); // "Rmv vwls frm
 // Написати функцію removeCharacter, яка приймає два аргументи:
 // рядок str і символ char.Функція повинна повертати новий рядок,
 //   у якому всі входження символу char видалені. Використовуйте цикл while
+function removeCharacter(str, char) {
+  let newStr ="";
+  for( let i = 0; i< str.length; i++){
+    if(str[i]!== char){
+      newStr += str[i];
+    }
+  }
+  return newStr;
+}
 
 // Приклади використання:
 console.log(removeCharacter("Hello, world!", "o")); // "Hell, wrld!"
